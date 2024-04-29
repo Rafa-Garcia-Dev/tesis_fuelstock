@@ -15,7 +15,7 @@
                         {{ __('Dashboard') }}
                     </x-nav-link> --}}
                     <x-nav-link :href="route('compras')" :active="request()->routeIs('compras')">
-                        {{ __('Compras') }}
+                        {{ __('Registro') }}
                         @role('admin')
                         <x-nav-link :href="route('reportes')" :active="request()->routeIs('reportes')">
                             {{ __('Reportes') }}
@@ -78,7 +78,7 @@
                 {{ __('Dashboard') }}
             </x-responsive-nav-link> --}}
             <x-responsive-nav-link :href="route('compras')" :active="request()->routeIs('compras')">
-                {{ __('Compras') }}
+                {{ __('Registro') }}
             </x-responsive-nav-link>
             @role('admin')
             <x-responsive-nav-link :href="route('reportes')" :active="request()->routeIs('reportes')">
